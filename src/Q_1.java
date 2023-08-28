@@ -16,7 +16,7 @@ import java.util.Scanner;
             a[i] = sc.nextInt();
         }
 
-        System.out.println("After Reversed");
+        System.out.println("Reversed Array:");
         for ( i = a.length-1;i>=0;i--){
             System.out.println(a[i]+" ");
         }
