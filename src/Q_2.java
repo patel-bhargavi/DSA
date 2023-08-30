@@ -1,3 +1,5 @@
+//Find the maximum and minimum element in an array
+
 import java.util.Scanner;
 
 public class Q_2{
