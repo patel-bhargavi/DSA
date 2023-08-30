@@ -1,24 +1,42 @@
-//Array :
-//1. Reverse Array
+//Reverse the array
+
 import java.util.Scanner;
 
- class Q_1 {
+public class Q_1 {
+
     public static void main(String[] args) {
+
+        System.out.println("Enter Size Of Array:");
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Size of array:");
         int n = sc.nextInt();
-        int i;
 
         int a[] = new int[n];
 
-        System.out.println("Enter Elements of array:");
-        for( i=0;i<n;i++){
+        System.out.println("Enter the element of array:");
+
+        for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
+        reverse(a);
+    }
 
-        System.out.println("Reversed Array:");
-        for ( i = a.length-1;i>=0;i--){
-            System.out.println(a[i]+" ");
+    static void reverse(int a[]) {
+        int start = 0;
+        int end = a.length - 1;
+
+        while (end > start) {
+            int temp = a[start];
+            a[start] = a[end];
+            a[end] = temp;
+
+            start++;
+            end--;
         }
+        System.out.println("Reversed Array:");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+
     }
 }
