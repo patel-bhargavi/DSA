@@ -34,12 +34,12 @@ public class Q_3 {
 
     static void kthMax(int a[],int k){
         sortArray(a);
-        System.out.println(k+ " Max:"+a[a.length - k]);
+        System.out.println(k+ " Max: "+a[a.length - k]);
     }
 
     static void kthMin(int a[],int k){
         sortArray(a);
-        System.out.println(k+" Min"+a[k-1]);
+        System.out.println(k+" Min: "+a[k-1]);
     }
 
 }
