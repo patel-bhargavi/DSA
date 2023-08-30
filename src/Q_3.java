@@ -22,12 +22,11 @@ public class Q_3 {
 
     static void sortArray(int a[]){
         for (int i = 0; i < a.length; i++) {
-            int j = i;
-            while (j > 0 && a[j - 1] > a[j]) {
+           for(int j=i ; j>0 && a[j-1] > a[j] ; j--) {
                 int temp = a[j];
                 a[j] = a[j - 1];
                 a[j - 1] = temp;
-                j--;
+
             }
         }
     }

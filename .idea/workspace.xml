@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a13e6224-c268-4583-b5f8-786b36404129" name="Changes" comment="NEW">
-      <change beforePath="$PROJECT_DIR$/src/Q_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Q_3.java" afterDir="false" />
-    </list>
+    <list default="true" id="a13e6224-c268-4583-b5f8-786b36404129" name="Changes" comment="NEW" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693393205822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="NEW">
+      <created>1693393317891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693393317891</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
