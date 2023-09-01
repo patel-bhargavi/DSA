@@ -1,3 +1,5 @@
+//Move all the negative elements to one side of the array
+
 import java.util.Scanner;
 
 public class Q_5 {
