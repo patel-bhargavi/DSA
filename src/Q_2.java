@@ -1,43 +1,40 @@
-//Find the maximum and minimum element in an array
-
 import java.util.Scanner;
 
-public class Q_2{
-
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter Size of array:");
-        int n = sc.nextInt();
-
-        int a[] = new int[n];
-
-        System.out.println("Enter Elements of array:");
-        for(int i = 0 ; i<n ; i++){
-            a[i] = sc.nextInt();
-        }
-       maximum(a);
-        minimum(a);
-    }
-
-    static void maximum(int a[]){
+public class Q_2 {
+    public int max(int [] array) {
         int max = 0;
 
-        for (int i=0;i<a.length-1;i++){
-            if (a[i]>a[max]){
-                System.out.println(a[i]+" Is Maximum");
+        for(int i=0; i<array.length; i++ ) {
+            if(array[i]>max) {
+                max = array[i];
             }
         }
+        return max;
     }
+    public int min(int [] array) {
+        int min = array[0];
 
-    static void minimum(int a[]){
-        int min = 0;
-
-        for (int i=0;i<a.length-1;i++){
-            if (a[i]<a[min]){
-                System.out.println(a[i]+" Is Minimum");
+        for(int i=0; i<array.length; i++ ) {
+            if(array[i]<min) {
+                min = array[i];
             }
         }
+        return min;
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Size of Array:");
+        int n = sc.nextInt();
+
+        int []array = new int[n];
+
+        System.out.println("Enter elements:");
+        for (int i =0;i<n;i++){
+            array[i] = sc.nextInt();
+        }
+        Q_2 m = new Q_2();
+        System.out.println("Maximum value in the array is::"+m.max(array));
+        System.out.println("Minimum value in the array is::"+m.min(array));
     }
 }
