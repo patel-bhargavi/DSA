@@ -1,3 +1,4 @@
+//Find the Union and Intersection of the two sorted arrays.
 public class Q_6 {
     public static void findUnion(int[] arr1, int[] arr2) {
         int m = arr1.length;
@@ -48,8 +49,8 @@ public class Q_6 {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {11, 13, 14, 15, 16,17};
-        int[] arr2 = {12, 13, 15, 16};
+        int[] arr1 = {1, 2, 3, 4, 5,6};
+        int[] arr2 = {2, 3, 5, 7};
         System.out.print("Union: ");
         findUnion(arr1, arr2);
         System.out.print("Intersection: ");
