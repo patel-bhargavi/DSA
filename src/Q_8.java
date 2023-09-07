@@ -1,8 +1,6 @@
 //find Largest sum contiguous Subarray
 import java.util.Scanner;
 
-
-
 public class Q_8 {
     public static void main(String[] args) {
 
