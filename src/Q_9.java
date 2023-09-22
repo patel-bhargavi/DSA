@@ -1,7 +1,6 @@
-import java.util.Scanner;
-import java.lang.Math.*;
-
 //Minimise the maximum difference between heights [V.IMP]
+import java.util.Scanner;
+
 public class Q_9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,10 +8,10 @@ public class Q_9 {
         System.out.println("Enter size of array:");
         int n = sc.nextInt();
 
-        System.out.println("Enter value of K for increasing or decreaing heigths:");
+        System.out.println("Enter value of K for increasing or decreasing heights:");
         int k = sc.nextInt();
 
-        int a[] = new int[n];
+        int []a = new int[n];
         System.out.println("Enter Elements of array :");
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
@@ -21,10 +20,10 @@ public class Q_9 {
 
         sortArray(a);
         int ans = find(a,k,n);
-        System.out.println("Maximumm Diffrenece of Heights: "+ans);
+        System.out.println("Maximum Difference of Heights: "+ans);
     }
 
-    static int find(int a[],int n,int k){
+    static int find(int []a,int n,int k){
         int ans = a[n-1] - a[0];
 
         int small = a[0]+k;
@@ -43,7 +42,7 @@ public class Q_9 {
 
     }
 
-    static void sortArray(int a[]){
+    static void sortArray(int []a){
         for (int i = 0; i < a.length; i++) {
             for(int j=i ; j>0 && a[j-1] > a[j] ; j--) {
                 int temp = a[j];
